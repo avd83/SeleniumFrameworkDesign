@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel = "tests" name="Suite">
+	
+	
+  
+<listeners>
+<listener class-name="Utility.TestNGListeners"/>
+</listeners>
+
+  <test thread-count="5" name="ErrorValidationTest">
+    <classes>
+		<class name="abhay.ErrorValidationTest"/>
+      </classes>
+  </test> 
+  
+  <test thread-count="5" name="LoginTest">
+    <classes>
+		<class name="abhay.LoginTest"/>
+      </classes>
+  </test>
+  
+  <test thread-count="5" name="ForgotPasswordTest">
+    <classes>
+		<class name="abhay.ForgotPasswordTest"/>
+      </classes>
+  </test>
+  
+</suite> 
